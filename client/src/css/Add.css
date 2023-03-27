@@ -1,0 +1,148 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf1f0b8;
+    flex-direction: column;
+}
+
+.reg-form {
+    width: 30%;
+}
+
+
+.box-regist-comp {
+    padding: 2.5rem;
+    box-sizing: border-box;
+    border: 1px solid #254d8454;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: white;
+}
+
+.container h2 {
+    margin: 0px 0 -0.125rem;
+    padding: 0;
+    color: green;
+    text-align: center;
+    font-family: 'Google Sans', 'Noto Sans Myanmar UI', arial, sans-serif;
+    font-size: 31px;
+    font-weight: 400;
+    margin-bottom: 50px;
+
+}
+
+.box-regist-comp a {
+    text-decoration: none;
+}
+
+.box-regist-comp p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .1px;
+    margin-bottom: 25px;
+    color: green;
+}
+
+.box-regist-comp .inputBox {
+    position: relative;
+}
+
+.box-regist-comp .inputBox input {
+    width: 93%;
+    padding: 0.625rem 10px;
+    font-size: 1rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid #254d84a8;
+    background: transparent;
+    border-radius: 4px;
+
+}
+
+.box-regist-comp .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: #254d84eb;
+    pointer-events: none;
+    transition: 0.5s;
+    font-family: sans-serif;
+}
+
+.box-regist-comp .inputBox input:focus~label,
+.box-regist-comp .inputBox input:valid~label,
+.box-regist-comp .inputBox input:not([value=""])~label {
+    top: -1.125rem;
+    left: 10px;
+    color: #254d84eb;
+    font-size: 0.75rem;
+    background-color: white;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.box-regist-comp .inputBox input:focus {
+    outline: none;
+    border: 2px solid #254d84eb;
+}
+
+.box-regist-comp input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: rgba(0, 128, 0, 0.833);
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    float: right;
+}
+
+.box-regist-comp input[type="submit"]:hover {
+    background-color:green;
+    box-shadow: 0 1px 1px 0 rgba(66, 133, 244, 0.45), 0 1px 3px 1px rgba(66, 133, 244, 0.3);
+}
+
+
+.box-regist-comp form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='file']{
+    margin-bottom: 17px;
+}
+
+.load{
+    margin-bottom: 12px;
+}
+
+
+@media (max-width:1100px) {
+    .reg-form {
+        width: 37%;
+    }
+}
+
+@media (max-width:800px) {
+    .reg-form {
+        width: 60%;
+    }
+}
+
+@media (max-width:600px) {
+    .reg-form {
+        width: 86%;
+    }
+}
+
+.uploadedimage{
+    width: 175px;
+    height: 120px;
+}

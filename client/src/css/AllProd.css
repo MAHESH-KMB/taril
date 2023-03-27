@@ -1,0 +1,80 @@
+
+body{
+    background: aliceblue;
+    padding: 0px 1%;
+}
+
+h2{
+    text-align: center;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.single-product{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    box-shadow: 1px 1px 5px 0px #0000002b;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.item-image{
+    width: 175px;
+    height: 120px;
+}
+
+.item-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.editicon{
+    scale: 1.7;
+    color: green;
+}
+
+.single-product p , .title p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: black;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image-title{
+    width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addnew button{
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: rgba(0, 128, 0, 0.833);
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    float: right;
+    margin-bottom: 100px;
+}
+
+.addnew button:hover{
+    background-color:green;
+}
+
+@media (max-width:600px) {
+    .title p , .single-product p{
+        font-size: 15px;
+    }
+}
